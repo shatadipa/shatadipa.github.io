@@ -17,15 +17,31 @@ h1, h2, h3, h4, h5 {
   font-weight:400;
 }
 
-header, section{
-  margin: 10px 5px 20px 5px;
+#content{
+  margin:20px auto;
 }
 
-section>section{
-  margin-left: 0;
+@media screen and (min-width: 980px) /* Desktop */ {
+  #content {
+    width:70%;
+  }
 }
 
+@media screen  and (max-width: 979px) /* Tablet */ {
+  #content {
+    width:80%;
+  }
+}
 
+@media screen and (max-width: 500px) /* Mobile */ {
+  #content {
+    width:95%;
+  }
+}
+
+section{
+  margin: 10px 0px 20px 0px;
+}
 
 a {
   color: #009fff;
